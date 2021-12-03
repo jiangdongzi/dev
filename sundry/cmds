@@ -1,1 +1,6 @@
 lsb_release -a
+while true; do echo hello world; sleep 1; done
+
+docker run -d ubuntu:18.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
+docker volume create my-vol
+docker volume inspect my-vol
